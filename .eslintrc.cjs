@@ -25,6 +25,7 @@ module.exports = {
 	],
 
 	rules: {
+		'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
 		'jsx-a11y/anchor-is-valid': 'off',
 		'react/prop-types': 'off',
 		'import/extensions': 'off',

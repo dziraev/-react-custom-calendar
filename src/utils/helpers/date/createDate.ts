@@ -7,8 +7,8 @@ interface ICreateDateParams {
 
 export const createDate = (params?: ICreateDateParams) => {
   const locale = params?.locale ?? 'default';
-
   const d = params?.date ?? new Date();
+
   const dayNumber = d.getDate();
   const day = d.toLocaleDateString(locale, { weekday: 'long' });
   const dayNumberInWeek = d.getDate() + 1;
