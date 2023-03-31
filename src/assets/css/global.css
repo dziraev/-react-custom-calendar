@@ -1,8 +1,36 @@
+:root {
+    /* colors */
+    --color-text: #434141;
+    --color-placeholder: rgba(0, 0, 0, 0.5);
+    --color-additional: #93b1ff;
+    --color-additional7: rgba(147, 177, 255, 0.7);
+    --bg-primary: #72757a;
+    --background-color-calendar: #ededed;
+    --background-color-calendar-header: #ffffff;
+
+    /* images */
+    --images-arrow: url('../images/arrow.svg');
+    /* spacing */
+    /* text */
+}
+
 .app__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-primary);
     height: 100vh;
     margin-inline: auto;
 }
+
+.date__container {
+    background-color: var(--background-color-calendar);
+    font-size: 15px;
+    color: var(--color-text);
+    border-radius: 15px;
+    padding: 5px 25px;
+    margin-bottom: 15px;
+}
+
+

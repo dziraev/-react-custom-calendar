@@ -11,7 +11,7 @@ export const createDate = (params?: ICreateDateParams) => {
 
   const dayNumber = d.getDate();
   const day = d.toLocaleDateString(locale, { weekday: 'long' });
-  const dayNumberInWeek = d.getDate() + 1;
+  const dayNumberInWeek = d.getDay() + 1;
   const dayShort = d.toLocaleDateString(locale, { weekday: 'short' });
   const year = d.getFullYear();
   const yearShort = d.toLocaleDateString(locale, { year: '2-digit' });
@@ -22,6 +22,7 @@ export const createDate = (params?: ICreateDateParams) => {
   const timestamp = d.getTime();
   const week = getWeekNumber(d);
   return {
+    date: d,
     dayNumber,
     day,
     dayNumberInWeek,
